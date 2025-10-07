@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let isValid = true;
     const messages =[ ];
 
-    if (username.value.length < 3){
+    if (username.length < 3){
         isValid = false;
         messages.push = ('Your name should be more than three chracters long');
         return messages
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
         messages.push("Please enter a valid email adress")
     }
 
-    if (password.value.length < 8){
+    if (password.length < 8){
         isValid = false;
         messages.push("Password should be atleast 8 characters long")
     }
