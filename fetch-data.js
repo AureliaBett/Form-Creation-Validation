@@ -24,4 +24,4 @@ async function fetchUserData(){
 
 
 }
-fetchUserData();
+document.addEventListener('DOMContentLoaded', fetchUserData);
